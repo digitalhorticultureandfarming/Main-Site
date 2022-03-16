@@ -1,0 +1,510 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+    margin: 0 auto;
+    background-color: midnightblue;
+    min-width: 215px;
+    max-width: 2000px;
+    height: 100%;
+}
+
+nav {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+ul {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 110px;
+    border-radius: 30px;
+}    
+
+li:hover {background-color: rgb(115, 255, 0);}
+
+a:hover {
+    font-size: 1.2rem;
+    background:  rgb(115, 255, 0);
+}
+
+
+/*grid*/
+.grid-area {
+    display: grid;
+    width: 90%;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 7%;
+    grid-template: repeat(5, 30%)  / repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2px 2px;
+    
+}
+
+.coverage-fields {
+    grid-area: 1 / 1 / span 2 / span 2;
+    justify-self: start;
+    color: white;
+}
+#cloud-main {
+    grid-area: 1 / 2 / span 2 / span 3;
+    width: 110%;
+    height:80%;
+    margin-left: 5%;
+    justify-self: start;
+}
+#computer-code {
+    grid-area: 1 / 6 / span 2 / span 2;
+    width: 80%;
+}
+#sensors {
+    grid-area: 3 / 1 / span 2 / span 2;
+    width: 70%;
+    align-self: start;
+}
+.advice {
+    grid-area: 3 / 3 / span 2 / span 2;
+    align-self: start;
+    color: white;
+}
+#computer-graph {
+    grid-area: 3 / 5 / span 2 / span 1;
+    align-self: start;
+    justify-self: start;
+    width: 180%;
+}
+
+.advice ul {
+    list-style-type: circle;
+    display: block;
+    align-self: start;
+}
+
+
+footer {
+    font-size: 1rem;
+    color: white;
+    border-top: 3px solid white;
+    width: 100%;
+    align-content: center;
+    /*margin-left: 5px;
+    margin-right: 5px;*/
+    padding-top: 10px;
+    height: 10%;
+}
+
+.footer-part1 {
+    display: inline-flex;
+    justify-content:space-evenly;
+    width: 100%;
+    align-content: center;
+}
+
+.footer-part2 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#time {
+    font-size: 0.8rem;
+    width: 40%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid-area {
+        margin-top: 10%;
+    }
+    .coverage-fields {
+        font-size: 0.9rem;
+    }
+    footer {
+        font-size: 1rem;
+    }
+    #time {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    ul {
+        
+        width: 40%;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    
+    .grid-area {
+        margin-top: 10%;
+        height: 110%;
+    }
+    .coverage-fields {
+        font-size: 0.7rem;
+    }
+    .advice {
+        width: 110%;
+        
+    }
+    .advice h2 {
+        font-size: 1.2rem;
+        margin-left: 20px;
+    }
+    .advice ul {
+        font-size: 0.9rem;
+        margin-left: 20px;
+    }
+    #computer-graph {
+        width: 230%;
+        margin-left: 40%;
+    }
+    #computer-code {
+        width: 90%;
+    }
+    #sensors {
+        width: 90%;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+    #time {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 750px) {
+    body {
+        font-size: 0.8rem;
+    }
+    ul {
+        
+        width: 40%;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    a:hover {
+        font-size: 0.9rem;
+    }
+    .grid-area {
+        margin-top: 12%;
+        height: 100%;
+    }
+    .coverage-fields {
+        font-size: 0.6rem;
+    }
+    .advice h2 {
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+    .advice ul {
+        font-size: 0.8rem;
+    }
+    .advice li {
+        height: 50px;
+    }
+    #computer-graph {
+        width: 230%;
+        margin-left: 40%;
+    }
+    #computer-code {
+        width: 90%;
+    }
+    #sensors {
+        width: 90%;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+    #time {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    body {
+        font-size: 0.8rem;
+    }
+    ul {
+        width: 40%;
+        margin-left: -4%;
+        font-size: 0.7rem;
+    }
+    h1 {
+        font-size: 0.8rem;
+        margin-left: 4%;
+    }
+    a:hover {
+        font-size: 0.9rem;
+    }
+    .grid-area {
+        margin-top: 15%;
+        height: 100%;
+    }
+    .coverage-fields {
+        font-size: 0.5rem;
+    }
+    .advice {
+        width: 130%
+    }
+    .advice h2 {
+        font-size: 0.9rem;
+        margin-left: 20px;
+    }
+    .advice ul {
+        font-size: 0.7rem;
+        margin-left: -20px;
+    }
+    .advice li {
+        height: 30px;
+    }
+    #computer-graph {
+        width: 230%;
+        margin-left: 40%;
+    }
+    #computer-code {
+        width: 90%;
+    }
+    #sensors {
+        width: 90%;
+    }
+    footer {
+        font-size: 0.7rem;
+    }
+    #time {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 0.8rem;
+    }
+    ul {
+        font-size: 0.7rem;
+        width: 40%;
+    }
+    h1 {
+        font-size: 0.8rem;
+        
+    }
+    a:hover {
+        font-size: 0.9rem;
+    }
+    .grid-area {
+        margin-top: 18%;
+        height: 100%;
+    }
+    .coverage-fields {
+        font-size: 0.4rem;
+    }
+    .advice {
+        text-align: center;
+        width: 120%;
+    }
+    .advice h2 {
+        font-size: 0.8rem;
+    }
+    .advice ul {
+        font-size: 0.7rem;
+        display: contents;
+    }
+    #cloud-main {
+        width: 140%;
+    }
+    #computer-graph {
+        width: 250%;
+        margin-left: 40%;
+    }
+    #computer-code {
+        width: 80%;
+        margin-left: 10px;
+    }
+    #sensors {
+        width: 100%;
+    }
+    footer {
+        font-size: 0.6rem;
+    }
+    #time {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 0.8rem;
+    }
+    nav {
+        justify-content: start;
+    }
+    ul {
+        font-size: 0.7rem;
+        width: 60%;
+    }
+    li {
+        width: 50px;
+    }
+    h1 {
+        font-size: 0.7rem;  
+    }
+    a:hover {
+        font-size: 0.8rem;
+    }
+    #computer-code {
+        grid-area: 3 / 1 / span 2 / span 2;
+        width: 100%;
+        align-self:baseline;
+        margin-top: 15%;
+    }
+    #cloud {
+        width: 15%;
+        height: 30%;
+    }
+    .grid-area {
+        margin-top: 18%;
+        height: 100%;
+    }
+    .coverage-fields {
+        font-size: 0.4rem;
+        line-height: 1.3rem;
+    }
+    .advice {
+        text-align: center;
+        width: 120%;
+    }
+    .advice h2 {
+        font-size: 0.8rem;
+    }
+    .advice ul {
+        font-size: 0.7rem;
+        display: contents;
+    }
+    .advice li {
+        height: 20px;
+        margin-left: 10%;
+    }
+    #cloud-main {
+        width: 190%;
+        margin-left: 20%;
+    }
+    #computer-graph {
+        width: 250%;
+        margin-left: 40%;
+    }
+    #sensors {
+        visibility: collapse;
+    }
+    footer {
+        font-size: 0.6rem;
+    }
+    #time {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    body {
+        font-size: 0.8rem;
+    }
+    nav {
+        justify-content: start;
+    }
+    
+    ul {
+        font-size: 0.6rem;
+        width: 50%;
+        margin-left: -45px;
+    }
+    li {
+        width: 60px;
+        margin-left: 5px;
+    }
+    h1 {
+        font-size: 0.7rem; 
+        width: 50%; 
+        margin-left: -30px;
+    }
+    a:hover {
+        font-size: 0.7rem;
+    }
+    #computer-code {
+        grid-area: 3 / 1 / span 2 / span 2;
+        width: 100%;
+        align-self:baseline;
+        margin-top: 15%;
+        height: 30%;
+    }
+    #cloud {
+        /*width: 15%;
+        height: 30%;*/
+        visibility: collapse;
+    }
+    .grid-area {
+        margin-top: 20%;
+        height: 100%;
+    }
+    .coverage-fields {
+        font-size: 0.3rem;
+        line-height: 1.3rem;
+    }
+    .advice {
+        text-align: center;
+        width: 120%;
+    }
+    .advice h2 {
+        font-size: 0.6rem;
+    }
+    .advice ul {
+        font-size: 0.5rem;
+        display: contents;
+    }
+    .advice li {
+        height: 30px;
+        margin-left: 20%;
+    }
+    #cloud-main {
+        width: 190%;
+        margin-left: 20%;
+    }
+    #computer-graph {
+        width: 250%;
+        margin-left: 40%;
+        height: 30%;
+    }
+    #sensors {
+        visibility: collapse;
+    }
+    footer {
+        font-size: 0.6rem;
+        height: 3%;
+        text-align: center;
+    }
+    .footer-part1 {
+        display: block;
+        padding-top: 0;
+    }
+    .footer-part2 {
+        width: 95%;
+        text-align: center;
+    }
+    
+    #time {
+        font-size: 0.6rem;
+        width: 95%;
+        text-align: center;
+    }
+}
