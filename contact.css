@@ -1,0 +1,356 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+    margin: 0 auto;
+    background-color: midnightblue;
+    min-width: 215px;
+    max-width: 2000px;
+    height: 100%;
+}
+
+.nav {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav ul {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 110px;
+    border-radius: 30px;
+}    
+
+.nav li:hover {background-color: rgb(115, 255, 0);}
+
+.nav a:hover {
+    font-size: 1.2rem;
+    background:  rgb(115, 255, 0);
+}
+  
+.contact {
+    margin-top: 100px;
+    height: 600px;
+    width: 100%;
+    background-image: url(contact_img.jpg);
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position: center;
+    text-align: center;
+    color: white;
+
+}
+
+.contact h1 {
+    padding-top: 10px;
+    font-size: 3rem;
+}
+.intro {
+    margin-top: 5%;
+    font-size: 1.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: bold;
+    line-height: 1.8rem;
+    -webkit-text-stroke: blue 0.3px;
+}
+.email {
+    margin-top: 2%;
+}
+#mail-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 1rem;
+    color: white;
+    border-top: 3px solid white;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+footer p {
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav ul {
+        width: 40%;
+    }
+    .nav h1 {
+        font-size: 1.3rem;
+    }
+    #mail-link {
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .nav ul {
+        
+        width: 40%;
+    }
+    .nav h1 {
+        font-size: 1.3rem;
+    }
+
+    .contact h1 {
+        font-size: 2.5rem;
+        margin-top: 100px;
+    }
+    #mail-link {
+        font-size: 1.2rem;
+    }
+
+    
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav ul {
+        
+        width: 40%;
+    }
+    .nav h1 {
+        font-size: 1rem;
+    }
+    .nav a:hover {
+        font-size: 0.9rem;
+    }
+
+    .contact {
+        background-size: 80% 100%;
+    }
+
+    .contact h1 {
+        font-size: 2.1rem;
+        margin-top: 100px;
+    }
+    #mail-link {
+        font-size: 1rem;
+    }
+    .intro {
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media only screen and (max-width: 630px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav ul {
+        width: 40%;
+        margin-left: -4%;
+        font-size: 0.7rem;
+    }
+    nav. h1 {
+        font-size: 0.8rem;
+        margin-left: 4%;
+    }
+    .nav a:hover {
+        font-size: 0.9rem;
+    }
+    
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav ul {
+        font-size: 0.7rem;
+        width: 40%;
+    }
+    .nav h1 {
+        font-size: 0.8rem;
+        
+    }
+    .nav a:hover {
+        font-size: 0.9rem;
+    }
+
+    .contact {
+        background-size: 82% 100%;
+    }
+
+    .contact h1 {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
+    #mail-link {
+        font-size: 0.8rem;
+    }
+    .intro {
+        font-size: 1.2rem;
+    }
+    
+    footer {
+        font-size: 0.6rem;
+    }
+}
+
+/*@media only screen and (max-width: 400px) {
+    .nav {
+        justify-content: start;
+    }
+    .nav ul {
+        font-size: 0.7rem;
+        width: 60%;
+    }
+    .nav li {
+        width: 50px;
+    }
+    .nav h1 {
+        font-size: 0.7rem;  
+    }
+    .nav a:hover {
+        font-size: 0.8rem;
+    }
+    
+    #cloud {
+        width: 15%;
+        height: 30%;
+    }
+    
+}*/
+
+@media only screen and (max-width: 380px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav {
+        justify-content: start;
+    }
+    
+    .nav ul {
+        font-size: 0.6rem;
+        width: 50%;
+        margin-left: -45px;
+    }
+    .nav li {
+        width: 60px;
+        margin-left: 5px;
+    }
+    .nav h1 {
+        font-size: 0.7rem; 
+        width: 50%; 
+        margin-left: -70px;
+    }
+    .nav a:hover {
+        font-size: 0.7rem;
+    }
+    
+    #cloud {
+        /*width: 15%;
+        height: 30%;*/
+        visibility: collapse;
+    }
+    #mail-link {
+        font-size: 0.7rem;
+    }
+    .contact h1 {
+        font-size: 1.9rem;
+    }
+   
+}
+
+@media only screen and (max-width: 330px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav {
+        justify-content: start;
+    }
+    
+    .nav ul {
+        font-size: 0.6rem;
+        width: 50%;
+        margin-left: -45px;
+    }
+    .nav li {
+        width: 60px;
+        margin-left: 5px;
+    }
+    .nav h1 {
+        font-size: 0.7rem; 
+        width: 50%; 
+    }
+    .nav a:hover {
+        font-size: 0.7rem;
+    }
+    
+    #cloud {
+        /*width: 15%;
+        height: 30%;*/
+        visibility: collapse;
+    }
+    #mail-link {
+        font-size: 0.6rem;
+    }
+    .contact {
+        background-size: 88% 100%;
+    }
+    .intro {
+        font-size: 1rem;
+    }
+    
+    footer {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav {
+        justify-content: start;
+    }
+    
+    .nav ul {
+        font-size: 0.6rem;
+        width: 50%;
+        margin-left: -45px;
+    }
+    .nav li {
+        width: 60px;
+        margin-left: 5px;
+    }
+    .nav h1 {
+        margin-left: -80px;
+    }
+    .nav a:hover {
+        font-size: 0.7rem;
+    }
+    
+    #mail-link {
+        font-size: 0.5rem;
+    }
+}
+
