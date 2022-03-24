@@ -45,7 +45,7 @@ html, body {
     margin-top: 100px;
     height: 600px;
     width: 100%;
-    background-image: url('./contact_img.jpg');
+    background-image: url(contact_img.JPG) rgb(35, 35, 35);
     background-repeat: no-repeat;
     background-size: 70% 100%;
     background-position: center;
