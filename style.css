@@ -311,6 +311,7 @@ footer {
     
     #computer-code {
         visibility: collapse;
+        marin-left: -150px;
     }
     #sensors {
         width: 100%;
@@ -345,9 +346,6 @@ footer {
     }
     a:hover {
         font-size: 0.8rem;
-    }
-    #computer-code {
-        visibility: collapse;
     }
     #cloud {
         width: 15%;
@@ -390,7 +388,7 @@ footer {
     }
 
     #sensors {
-        visibility: collapse;
+        /*visibility: collapse;*/
     }
     footer {
         font-size: 0.6rem;
@@ -419,9 +417,6 @@ footer {
     }
     a:hover {
         font-size: 0.8rem;
-    }
-    #computer-code {
-        visibility: collapse;
     }
     #cloud {
         width: 15%;
@@ -456,9 +451,9 @@ footer {
         width: 350%;
         
     }
-    #sensors {
+    /*#sensors {
         visibility: collapse;
-    }
+    }*/
     footer {
         font-size: 0.6rem;
     }
