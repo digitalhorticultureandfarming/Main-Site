@@ -1,0 +1,324 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+    margin: 0 auto;
+    background-color: midnightblue;
+    min-width: 215px;
+    max-width: 2000px;
+}
+
+.nav {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav ul {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 110px;
+    border-radius: 30px;
+}    
+
+.nav li:hover {background-color: rgb(115, 255, 0);}
+
+.nav a:hover {
+    font-size: 1.2rem;
+    background:  rgb(115, 255, 0);
+}
+
+
+/*grid*/
+.grid-services {
+    display: grid;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 7%;
+    grid-template: 20% 20% 20% 20% 20% / 50% 50%;
+    height: 800px;
+}
+
+.grid-services a {
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.grid-services a:hover {
+    border: 2px solid black;
+    color: midnightblue;
+    background-color: white;
+}
+
+.title {
+    grid-area: 1 / 1 / span 1 / span 2;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.services-text {
+    grid-area: 2 / 1 / span 1 / span 1;
+    color: white;
+    
+}
+.data-science {
+    grid-area: 3 / 1 / span 1 / span 1;
+    color: white;
+}
+.research {
+    grid-area: 4 / 1 / span 1 / span 1;
+    color: white;
+}
+.web {
+    grid-area: 5 / 1 / span 1 / span 1;
+    color: white;
+}
+.animation {
+    grid-area: 2 / 2 / span 2/ span 1;
+    /*object-fit: scale-down;*/
+}
+.animation img {
+   width: 80%;
+   height: 130%; 
+}
+
+
+
+footer {
+    font-size: 1rem;
+    color: white;
+    border-top: 3px solid white;
+    width: 100%;
+    align-content: center;
+    padding-top: 10px;
+    height: 10%;
+    position: relative;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid-services {
+        margin-top: 10%;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav ul {
+        
+        width: 40%;
+    }
+    .nav h1 {
+        font-size: 1.3rem;
+    }
+    
+    .grid-services {
+        margin-top: 10%;
+        height: 850px;
+        grid-template: 15% 15% 15% 15% 15% / 50% 50%;
+        
+    }
+    
+    .services-text, .data-science, .research, .web, h2 {
+        text-decoration: underline;
+    }
+    .services-text, .data-science, .research, .web, p {
+        text-decoration: none;
+    }
+   
+    .animation {
+        margin-top: 10%;
+    }
+    .animation img {
+        margin-left: 10%;
+        height: 90%;
+    }
+    
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav ul {
+        
+        width: 40%;
+    }
+    .nav h1 {
+        font-size: 1rem;
+    }
+    .nav a:hover {
+        font-size: 0.9rem;
+    }
+    .grid-services {
+        height: 750px;
+    }
+    
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav ul {
+        width: 40%;
+        margin-left: -4%;
+        font-size: 0.7rem;
+    }
+    .nav h1 {
+        font-size: 0.8rem;
+        margin-left: 4%;
+    }
+    .nav a:hover {
+        font-size: 0.9rem;
+    }
+    
+    .title {
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+    
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav {
+        justify-content: start;
+    }
+    .nav ul {
+        font-size: 0.7rem;
+        width: 60%;
+    }
+    .nav li {
+        width: 50px;
+    }
+    .nav h1 {
+        font-size: 0.7rem;  
+    }
+    .nav a:hover {
+        font-size: 0.8rem;
+    }
+    
+    #cloud {
+        width: 15%;
+        height: 30%;
+    }
+    .title {
+        font-size: 1.5rem;
+        margin-top: 25%;
+    }
+    .grid-services {
+        display: block;   
+        height: 900px;     
+    }
+    .services-text, .data-science, .research, .web, h2 {
+        font-size: 0.9rem;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .services-text, .data-science, .research, .web, p {
+        font-size: 0.7rem;
+        text-decoration: none;
+        text-align: center;
+    }
+    .services-text, .data-science, .research, .web {
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav {
+        justify-content: start;
+    }
+    
+    .nav ul {
+        font-size: 0.6rem;
+        width: 50%;
+        margin-left: -45px;
+    }
+    .nav li {
+        width: 60px;
+        margin-left: 5px;
+    }
+    .nav h1 {
+        font-size: 0.7rem; 
+        width: 50%; 
+        margin-left: -30px;
+    }
+    .nav a:hover {
+        font-size: 0.7rem;
+    }
+    
+    #cloud {
+        /*width: 15%;
+        height: 30%;*/
+        visibility: collapse;
+    }
+    .title {
+        font-size: 1.2rem;
+        margin-top: 100px;
+    }
+    .grid-services {
+        display: block;
+        height: 750px;        
+    }
+    .services-text, .data-science, .research, .web, h2 {
+        font-size: 0.8rem;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .services-text, .data-science, .research, .web, p {
+        font-size: 0.7rem;
+        text-decoration: none;
+        text-align: center;
+    }
+    .data-science {
+        margin-top: 50px;
+    }
+   
+    
+    footer h3{
+        font-size: 0.6rem;
+    }
+    footer p {
+        font-size: 0.5rem;
+        padding-bottom: 5px;
+    }
+    
+    
+}
