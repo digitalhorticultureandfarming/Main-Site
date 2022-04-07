@@ -1,0 +1,585 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+    margin: 0 auto;
+    background-color: midnightblue;
+    min-width: 215px;
+    max-width: 2000px;
+    height: 100%;
+}
+
+.nav {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav ul {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 110px;
+    border-radius: 30px;
+}    
+
+.nav li:hover {background-color: rgb(115, 255, 0);}
+
+.nav a:hover {
+    font-size: 1.2rem;
+    background:  rgb(115, 255, 0);
+}
+
+.breadcrumb {
+    text-align: left;
+    margin-top: 105px;
+    display: block;
+}
+
+.breadcrumb ul {
+    padding: 0px;
+    margin: 10px 0px;
+}
+
+.breadcrumb li {
+    margin:0px;
+    list-style: none;
+}
+  
+.breadcrumb a {
+    float: left;
+    color: #fff;
+    background: darkcyan;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 0 5px;
+}
+  
+  .breadcrumb .location a::before,
+  .breadcrumb .location a::after {
+    content: "";
+    position: absolute;
+    border-color: darkcyan;
+    border-style: solid;
+    border-width: 15px 5px;
+  }
+  
+  .breadcrumb .location a::after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: darkcyan;
+  }
+  .breadcrumb .location a::before {
+    left: -10px;
+    border-left-color: transparent;
+  }
+  
+  .breadcrumb .location a:hover {
+    background-color: rgb(115, 255, 0);
+  }
+  .breadcrumb .location a:hover::before {
+    border-color: rgb(115, 255, 0);
+    border-left-color: transparent;
+  }
+  .breadcrumb .location a:hover::after {
+    border-left-color: rgb(115, 255, 0);
+  }
+
+.empty {
+    height: 60px;
+}
+
+.title {
+    color: white;
+    font-size: 2rem;
+}
+.title, h1 h3 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.list {
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+.list ul {
+    height: 500px;
+    float: left;
+    margin-top: 80px;
+}
+.title-list {
+    margin-left: 22%;
+}
+
+.title-list li:before{
+    margin-left: -100px;
+    list-style-type: none;
+    position: absolute;
+    color: #fff;
+    content: "\2713\0020";
+    font-size: 15px;
+    background: #83bf5d;
+    padding: 2px;
+    border-radius: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.list li {
+    list-style: none;
+}
+.images-list {
+    margin-left: 100px;
+}
+.images-list img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+
+.para3 {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    clear: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    font-size: 1rem;
+    color: white;
+    border-top: 3px solid white;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    height: 50px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .title h1 {
+        font-size: 2.5rem;
+    }
+    .title h3 {
+        font-size: 2rem;
+    }
+    .list {
+        width: 90%;
+        height: 600px;
+        font-size: 1.8rem;
+    }
+    .list ul {
+        height: 500px;
+        float: left;
+        margin-top: 80px;
+    }
+    .images-list img {
+        width: 80px;
+    }
+    .title-list {
+        margin-left: 18%;
+    }
+  
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .nav ul {
+        
+        width: 40%;
+    }
+    .nav h1 {
+        font-size: 1.3rem;
+    }
+   
+    .title h1 {
+        font-size: 2.2rem;
+    }
+    .title h3 {
+        font-size: 1.8rem;
+    }
+    .list {
+        width: 90%;
+        height: 500px;
+        font-size: 1.5rem;
+    }
+    .list ul {
+        height: 400px;
+        float: left;
+        margin-top: 80px;
+    }
+    .images-list img {
+        width: 70px;
+    }
+    .title-list {
+        margin-left: 13%;
+    }
+    .images-list {
+        margin-left: 70px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 720px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav ul {
+        
+        width: 40%;
+    }
+    .nav h1 {
+        font-size: 1rem;
+    }
+    .nav a:hover {
+        font-size: 0.9rem;
+    }
+    .title h1 {
+        font-size: 2rem;
+    }
+    .title h3 {
+        font-size: 1.5rem;
+    }
+    .list {
+        width: 90%;
+        height: 500px;
+        font-size: 1.2rem;
+    }
+    .list ul {
+        height: 400px;
+        float: left;
+        margin-top: 80px;
+    }
+    .images-list img {
+        width: 60px;
+    }
+    .title-list {
+        margin-left: 10%;
+        line-height: 2.4rem;
+    }
+    .images-list {
+        margin-left: 40px;
+    }
+    .title-list li:before{
+        margin-left: -70px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav ul {
+        width: 40%;
+        margin-left: -4%;
+        font-size: 0.7rem;
+    }
+    .nav h1 {
+        font-size: 0.8rem;
+        margin-left: 4%;
+    }
+    .nav a:hover {
+        font-size: 0.9rem;
+    }
+    .title h1 {
+        font-size: 2rem;
+    }
+    .title h3 {
+        font-size: 1.3rem;
+    }
+    .list {
+        width: 90%;
+        height: 410px;
+        font-size: 1.2rem;
+    }
+    .list ul {
+        height: 380px;
+        float: left;
+        margin-top: 60px;
+    }
+    .images-list img {
+        width: 50px;
+    }
+    .title-list {
+        margin-left: 10%;
+        line-height: 2.2rem;
+    }
+    .images-list {
+        margin-left: 30px;
+    }
+    .para3 {
+        font-size: 1.3rem;
+    
+    footer {
+        font-size: 0.7rem;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav ul {
+        font-size: 0.7rem;
+        width: 40%;
+    }
+    .nav h1 {
+        font-size: 0.8rem;
+        
+    }
+    .nav a:hover {
+        font-size: 0.9rem;
+    }
+    .title h1 {
+        font-size: 1.8rem;
+    }
+    .title h3 {
+        font-size: 1.1rem;
+    }
+    .list {
+        width: 90%;
+        height: 410px;
+        font-size: 1.1rem;
+    }
+    .list ul {
+        height: 380px;
+        float: left;
+        margin-top: 60px;
+    }
+    .images-list img {
+        width: 40px;
+    }
+    .title-list {
+        margin-left: 5%;
+        line-height: 2.2rem;
+    }
+    .images-list {
+        margin-left: 5px;
+    }
+    .title-list li:before{
+        margin-left: -40px;
+    }
+    footer {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .nav {
+        justify-content: start;
+    }
+    .nav ul {
+        font-size: 0.7rem;
+        width: 60%;
+    }
+    .nav li {
+        width: 50px;
+    }
+    .nav h1 {
+        font-size: 0.7rem;  
+    }
+    .nav a:hover {
+        font-size: 0.8rem;
+    }
+    
+    #cloud {
+        width: 15%;
+        height: 30%;
+    }
+    
+    .breadcrumb {
+        text-align: left;
+        margin-top: 75px;
+        display: block;
+    }
+    
+    .breadcrumb ul {
+        padding: 0px;
+        margin: 5px 0px;
+    }
+    
+    .breadcrumb li {
+        margin:0px;
+        list-style: none;
+    }
+      
+    .breadcrumb a {
+        float: left;
+        color: #fff;
+        background: darkcyan;
+        text-decoration: none;
+        position: relative;
+        height: 15px;
+        line-height: 15px;
+        text-align: center;
+        margin-right: 10px;
+        padding: 0 2.5px;
+    }
+      
+    .breadcrumb .location a::before,
+    .breadcrumb .location a::after {
+        content: "";
+        position: absolute;
+        border-color: darkcyan;
+        border-style: solid;
+        border-width: 7.5px 2.5px;
+    }
+      
+    .breadcrumb .location a::after {
+        left: 100%;
+        border-color: transparent;
+        border-left-color: darkcyan;
+    }
+    .breadcrumb .location a::before {
+        left: -5px;
+        border-left-color: transparent;
+    }
+      
+    .breadcrumb .location a:hover {
+        background-color: rgb(115, 255, 0);
+    }
+    .breadcrumb .location a:hover::before {
+        border-color: rgb(115, 255, 0);
+        border-left-color: transparent;
+    }
+    .breadcrumb .location a:hover::after {
+        border-left-color: rgb(115, 255, 0);
+    }
+    .title h1 {
+        font-size: 1.7rem;
+    }
+    .title h3 {
+        font-size: 1.1rem;
+        width: 95%;
+    }
+    .list {
+        width: 90%;
+        height: 500px;
+        font-size: 1.1rem;
+    }
+    .list ul {
+        height: 450px;
+        float: left;
+        margin-top: 50px;
+    }
+    .images-list img {
+        width: 30px;
+    }
+    .title-list {
+        margin-left: 0%;
+        width: 50%;
+        line-height: 2.2rem;
+    }
+    .images-list {
+        margin-left: 0px;
+        line-height: 6rem;
+    }
+    .title-list li:before{
+        margin-left: -40px;
+    }
+    .para3 {
+        font-size: 1.1rem;
+        width: 90%;
+    }
+    
+    footer {
+        font-size: 0.6rem;
+        padding-bottom: 2px;
+        padding-top: 5px;
+    }
+}
+   
+
+@media only screen and (max-width: 310px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav {
+        justify-content: start;
+    }
+    
+    .nav ul {
+        font-size: 0.6rem;
+        width: 50%;
+        margin-left: -45px;
+    }
+    .nav li {
+        width: 60px;
+        margin-left: 5px;
+    }
+    .nav h1 {
+        font-size: 0.7rem; 
+        width: 50%; 
+        margin-left: -30px;
+    }
+    .nav a:hover {
+        font-size: 0.7rem;
+    }
+    
+    #cloud {
+        /*width: 15%;
+        height: 30%;*/
+        visibility: collapse;
+    }
+
+    .title h1 {
+        font-size: 1.4rem;
+    }
+    .title h3 {
+        font-size: 1rem;
+        width: 95%;
+    }
+    .list {
+        width: 90%;
+        height: 450px;
+        font-size: 1rem;
+    }
+    .list ul {
+        height: 400px;
+        float: left;
+        margin-top: 50px;
+    }
+    .images-list img {
+        width: 5px;
+    }
+    .title-list {
+        margin-left: 3%;
+        width: 70%;
+        line-height: 2.2rem;
+    }
+    .images-list {
+        margin-left: -100px;
+        visibility: collapse;
+    }
+    .title-list li:before{
+        margin-left: -50px;
+    }
+    .para3 {
+        font-size: 1.1rem;
+        width: 90%;
+    }
+    
+    footer {
+        font-size: 0.6rem;
+        height: 3%;
+    }
+}
